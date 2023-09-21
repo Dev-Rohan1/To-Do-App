@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero{
+    background: linear-gradient(140deg, #5B0888, #713ABE);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+}
+.container h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+input.new-task {
+    flex: 1;
+    display: flex;
+}
+
+input.new-task {
+    outline: 0;
+    border: 1px solid #ddd;
+    color: #000;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+input.new-task::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+}
+.add-btn{
+    outline: 0;
+    border: 0;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: white;
+    background: #713ABE;
+    margin-left: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+ul.list-container {
+    list-style: none;
+    overflow: hidden;
+}
+
+li.list {
+    background: #f2f2f2;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3px;
+}
+li.list span i {
+    padding: 15px 15px;
+    background: #ed5151;
+    color: white;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+}
+li.list span{
+    transform: translateX(50px);
+    transition: 0.3s;
+}
+li.list label {
+    padding-left: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.list:hover span{
+    transform: translateX(0px);
+}
+.clear-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.clear-btn label {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: -10px;
+}
+
+.clear-btn button {
+    border: 0;
+    outline: 0;
+    padding: 6px 20px;
+    font-size: 15px;
+    font-weight: 400;
+    background: #1450A3;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: -10px;
+}
